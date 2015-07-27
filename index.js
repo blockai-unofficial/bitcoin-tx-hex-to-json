@@ -35,7 +35,7 @@ var txHexToJSON = function(hex) {
   });
   return {
     confirmations: null,
-    blockindex: null,
+    blockheight: null,
     blocktime: null,
     blockhash: null,
     timeReceived: new Date().getTime(),
