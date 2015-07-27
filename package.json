@@ -1,6 +1,6 @@
 {
   "name": "bitcoin-tx-hex-to-json",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Convert a raw Bitcoin transaction in hex format to common-blockchain compatible JSON.",
   "main": "index.js",
   "scripts": {
