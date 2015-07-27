@@ -1,0 +1,33 @@
+{
+  "name": "bitcoin-tx-hex-to-json",
+  "version": "0.0.1",
+  "description": "Convert a raw Bitcoin transaction in hex format to common-blockchain compatible JSON.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blockai/bitcoin-tx-hex-to-json.git"
+  },
+  "keywords": [
+    "bitcoin",
+    "txhex",
+    "common-blockchain",
+    "json",
+    "transaction",
+    "hex"
+  ],
+  "author": "William Cotton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blockai/bitcoin-tx-hex-to-json/issues"
+  },
+  "homepage": "https://github.com/blockai/bitcoin-tx-hex-to-json#readme",
+  "devDependencies": {
+    "tape": "^4.0.1"
+  },
+  "dependencies": {
+    "bitcoinjs-lib": "^1.5.7"
+  }
+}
