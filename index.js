@@ -20,7 +20,7 @@ var txHexToJSON = function(hex) {
   var vout = [];
   tx.outs.forEach(function(output, index) {
     var script_type = bitcoin.scripts.classifyOutput(output.script);
-    var address = script_type == "pubkeyhash" ? bitcoin.Address.fromOutputScript(output.script, bitcoin.networks.testnet).toString() : null;
+    var address = script_type == "pubkeyhash" || script_type == "scripthash" ? bitcoin.Address.fromOutputScript(output.script, bitcoin.networks.testnet).toString() : null;
     vout.push({
       value: output.value,
       index: index,
