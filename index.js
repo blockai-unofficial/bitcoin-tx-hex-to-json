@@ -11,6 +11,9 @@ var txHexToJSON = function (hex) {
     var input_addresses = []
     if (input.script.chunks.length === 2) {
       var pubKey = input.script.chunks[1]
+      if (typeof (pubKey) !== 'object') {
+        pubKey = new Buffer(pubKey)
+      }
       var pubKeyHash = bitcoin.crypto.hash160(pubKey)
       var payload = new Buffer(21)
       payload.writeUInt8(bitcoin.networks.testnet.pubKeyHash, 0)
