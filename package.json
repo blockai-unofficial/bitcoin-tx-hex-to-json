@@ -1,6 +1,6 @@
 {
   "name": "bitcoin-tx-hex-to-json",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Convert a raw Bitcoin transaction in hex format to common-blockchain compatible JSON.",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/blockai/bitcoin-tx-hex-to-json#readme",
   "devDependencies": {
-    "tape": "^4.0.1"
+    "tape": "^4.2.2"
   },
   "dependencies": {
     "bitcoinjs-lib": "^1.5.7",
